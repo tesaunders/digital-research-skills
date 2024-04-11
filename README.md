@@ -79,6 +79,8 @@ LaTeX
 
 Zotero
 
+https://gsverhoeven.github.io/post/zotero-rmarkdown-csl/
+
 AI Tools
 
 ### Communication
