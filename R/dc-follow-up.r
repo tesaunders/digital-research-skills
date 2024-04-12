@@ -19,13 +19,16 @@ top_10 <- mileage |>
 
 ### case_when()
 
-range(top_10$year)
+unique(top_10$year)
 
-top_10 |> 
+top_10 <- top_10 |> 
   mutate(
     decade = case_when(year < 2000 ~ "1990s",
                        .default = "2000s")
   )
+
+top_10 |> 
+  filter(decade == "1990s")
 
 ### left_join()
 
