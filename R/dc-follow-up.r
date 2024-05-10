@@ -24,6 +24,10 @@ mileage |>
 
 mileage |>
   group_by(manufacturer) |>
+  summarise(best = max(hwy))
+
+mileage |>
+  group_by(manufacturer) |>
   summarise(best = max(hwy)) |> 
   arrange(desc(best)) |> 
   slice_head(n = 10)
