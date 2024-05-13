@@ -72,3 +72,6 @@ combined <- top_10 |>
 combined <- top_10 |> 
   left_join(manufacturers) |> 
   relocate(hq, .before = model)
+
+?left_join
+# https://rpubs.com/williamsurles/293454
