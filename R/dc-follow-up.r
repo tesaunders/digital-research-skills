@@ -40,12 +40,6 @@ top_10 <- mileage |>
 
 unique(top_10$year)
 
-top_10 |> 
-  mutate(
-    decade = case_when(year < 2000 ~ "1990s",
-                       .default = "2000s")
-  )
-
 top_10 <- top_10 |> 
   mutate(
     decade = case_when(year < 2000 ~ "1990s",
